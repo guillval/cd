@@ -20,4 +20,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - uses: sburris/dependency-check-action@master
         with:
-        Project-Name: TestApp
+        Project-Name: 
+        required: true
