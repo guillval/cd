@@ -30,11 +30,11 @@ jobs:
           name: reports
           path: reports
       - name: Run Trivy vulnerability scanner
-          uses: aquasecurity/trivy-action@master
-          with:
-            image-ref: 'docker.io/wilks13010/cd:${{sha-94c38f9}}'
-            format: 'table'
-            exit-code: '1'
-            ignore-unfixed: true
-            vuln-type: 'os,library'
-            severity: 'CRITICAL,HIGH'
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'docker.io/wilks13010/cd:${{sha-94c38f9}}'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          severity: 'CRITICAL,HIGH'
