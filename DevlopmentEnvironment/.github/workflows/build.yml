@@ -17,8 +17,4 @@ jobs:
             password: ${{ secrets.DOCKER_PASSWORD }}
             registry: docker.io
             repository: wilks13010/cd
-<<<<<<< HEAD:DevlopmentEnvironment/.github/workflows/build.yml
             tag_with_sha: true
-=======
-            tag_with_sha: true
->>>>>>> 3eaaa2174216872107bf85184cea19d6d00d7f59:.github/workflows/build.yml
