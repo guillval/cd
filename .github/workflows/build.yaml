@@ -30,7 +30,7 @@ jobs:
           name: reports
           path: reports
       - name: use klar
-  run: |
-    wget https://github.com/optiopay/klar/releases/download/v2.4.0/klar-2.4.0-linux-amd64 -O klar
-    chmod +x klar
-    CLAIR_ADDR=http://clair.3r1.co:6060 ./klar docker.io/wilks13010/cd:sha-94c38f9
+        run: |
+          wget https://github.com/optiopay/klar/releases/download/v2.4.0/klar-2.4.0-linux-amd64 -O klar
+          chmod +x klar
+          CLAIR_ADDR=http://clair.3r1.co:6060 ./klar docker.io/wilks13010/cd:sha-94c38f9
